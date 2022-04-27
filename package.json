@@ -1,0 +1,21 @@
+{
+  "name": "g21-node-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PNC-NODE-PROJECT/G21-NODE-PROJECT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PNC-NODE-PROJECT/G21-NODE-PROJECT/issues"
+  },
+  "homepage": "https://github.com/PNC-NODE-PROJECT/G21-NODE-PROJECT#readme"
+}
