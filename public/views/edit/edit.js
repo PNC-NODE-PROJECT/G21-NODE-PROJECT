@@ -1,3 +1,4 @@
+
 // DOMS ELEMENTS  ---------------------------------------------------------
 const dom_questions_view = document.getElementById("questions-view");
 const dom_questions_dialog = document.getElementById("questions-dialog");
@@ -7,7 +8,7 @@ const dom_createEditButton = document.getElementById("createEditButton");
 let questions = [
   {
     title: "What does HTML stand for?",
-    choiceA: "Hi Thierry More Laught",
+    choiceA: "H",
     choiceB: "How To move Left",
     choiceC: "Ho Theary Missed the Laundry !",
     choiceD: "Hypertext Markup Language",
@@ -59,7 +60,6 @@ function loadQuestions() {
 function renderQuestions() {
   // Remove the card container and create a new one
   dom_questions_container = document.getElementById("questions-container");
-  dom_questions_container.remove();
   dom_questions_container = document.createElement("div");
   dom_questions_container.id = "questions-container";
   dom_questions_view.appendChild(dom_questions_container);
@@ -90,7 +90,6 @@ function renderQuestions() {
     let actions = document.createElement("div");
     actions.className = "actions";
     card_header.appendChild(actions);
-
     let editAction = document.createElement("img");
     editAction.src = "../../img/edit.svg";
     editAction.addEventListener("click", editQuestion);
@@ -112,7 +111,6 @@ function renderQuestions() {
     para_1.textContent =question.choiceA;
     let icon_true = document.createElement('i');
     icon_true.className= 'fa fa-check-circle-o';
-    
 
     let answer_2 =document.createElement('div');
     answer_2.className = 'answer';
@@ -150,7 +148,6 @@ function renderQuestions() {
     };
   }
 }
-
 function editQuestion(event) {
   //  Get the question index
   questionToEdit = event.target.parentElement.parentElement.dataset.index;

@@ -196,6 +196,14 @@ dialog {
   margin: 0;
   overflow: hidden;
 }
+/* welcome app */
+.btn_play,.btn_edit{
+  width: 45%;
+  height: 300px;
+  margin: auto;
+  margin-top: 40px;
+  
+}
 
 dialog header {
   background-color: var(--main-color);
@@ -250,14 +258,17 @@ input:focus {
 /* ----------------------------- MENU --------------------------   */
 
 nav {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(128, 128, 128, 0.61);
   position: sticky;
   top: 0;
+  display: flex;
 }
-
+.btn{
+  width: 90%;
+  margin: auto;
+}
 ul img {
   margin-left: 30px;
 }
