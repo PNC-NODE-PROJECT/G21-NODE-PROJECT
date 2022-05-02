@@ -7,25 +7,39 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="edit.js" defer></script>
-    <link rel="stylesheet" href="../../css/main.css">
+    <!-- <link rel="stylesheet" href="../../css/main.css"> -->
 </head>
 <body>
     <h1>Creare Quiz</h1>
-    <a href="../index.html">Go to menu</a>
-    <form action="">
-        <label for="fname">Question:</label><br>
-        <input type="text" id="question" placeholder="Add question..."><br><br>
-        <div class="answers">
-            <label for="fname">answers 1:</label><br>
-            <input type="text" id="answer1"><br><br>
-            <label for="fname">answers 2:</label><br>
-            <input type="text" id="answer2"><br><br>
-            <label for="fname">answers 3:</label><br>
-            <input type="text" id="answer3"><br><br>
-            <label for="fname">answers 4:</label><br>
-            <input type="text" id="answer4"><br><br>
+    <a href="../../index.html">Go to menu</a>
+    <div class="feature">
+        <div class="box-content">
+            <form action="" id="store-data">
+                <div class="text-answer">
+                    <input type="question" id="question" placeholder="Question..." /><br />
+                </div>
+                <div class="choice">
+                    A. <label for="answer1"><input id="answer1" type="text" placeholder="option 1..."></label><br>
+                    B. <label for="answer2"><input id="answer2" type="text" placeholder="option 2..."></label><br>
+                    C. <label for="answer3"><input id="answer3" type="text" placeholder="option 3..."></label><br>
+                    D. <label for="answer4"><input id="answer4" type="text" placeholder="option 4..."></label><br>
+                </div>
+                <hr>
+                <div class="storCorectAnswer">
+                    <!-- Your correct answer: <input type="" id="correct"> -->
+                    Correct answer: 
+                    <select name="option" id="selection">
+                        <option value="A" >A</option>
+                        <option value="B" >B</option>
+                        <option value="C" >C</option>
+                        <option value="D" >D</option>
+                    </select>
+                </div>
+            </form>
+            <div class="btn">
+                <button id="add">+ Add auestion</button>
+            </div>
         </div>
-        <input type="submit" id="submit" value="+Add question">
-    </form>
+    </div>
 </body>
 </html>

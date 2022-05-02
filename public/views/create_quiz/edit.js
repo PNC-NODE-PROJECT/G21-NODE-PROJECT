@@ -1,30 +1,34 @@
-const URL = "http://localhost:8000/data";
+const URL = "http://localhost:8000/api/questions";
 
-axios.get(URL).then((response) => {
-    let list = response.data;
-    console.log(list);
-})
-
-
-
-
-// add Question
-function addQuestion(event){
-    event.preventDefault();
-
-    let question = document.getElementById("question").value;
-    let answer1 = document.getElementById("answer1").value;
-    let answer2 = document.getElementById("answer2").value;
-    let answer3 = document.getElementById("answer3").value;
-    let answer4 = document.getElementById("answer4").value;
-
-    console.log(question);
+function getQuestion(){
     
+
+    console.log(newQuestion);
 }
 
-// display question 
+function addQuestion(){
+    let question = document.getElementById("question");
+    let answer1 = document.getElementById("answer1");
+    let answer2 = document.getElementById("answer2");
+    let answer3 = document.getElementById("answer3");
+    let answer4 = document.getElementById("answer4");
+    let correction = document.getElementById("selection");
+    let newQuestion = {
+        titleQuestion:question.value,
+        answer:{
+            answer1:answer1.value,
+            answer2:answer2.value,
+            answer3:answer3.value,
+            answer4:answer4.value
+        },
+        correction:correction.value
+    };
+    
+    axios.post("/api/questions",newQuestion).then(response => {
+        let data = response.data;
+        console.log(data);
+    })
+}
 
-
-// main code
-let applyAnswer = document.getElementById("submit");
-applyAnswer.addEventListener("click", addQuestion);
+let addTheQuestion = document.getElementById("add");
+addTheQuestion.addEventListener("click", addQuestion);
