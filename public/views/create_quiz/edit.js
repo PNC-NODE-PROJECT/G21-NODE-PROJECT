@@ -1,11 +1,5 @@
 const URL = "http://localhost:8000/api/questions";
 
-function getQuestion(){
-    
-
-    console.log(newQuestion);
-}
-
 function addQuestion(){
     let question = document.getElementById("question");
     let answer1 = document.getElementById("answer1");

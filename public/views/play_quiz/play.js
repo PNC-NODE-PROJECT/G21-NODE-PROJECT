@@ -22,6 +22,7 @@ axios.get(URL)
             let label = document.createElement("label");
             option.type = 'radio';
             option.name = 'answer';
+            option.className = "option";
             option.value =  answerOfQuestion;
             label = textContent = answerOfQuestion;
             form.append(option);

@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="edit.js" defer></script>
-    <!-- <link rel="stylesheet" href="../../css/main.css"> -->
 </head>
 <body>
-    <h1>Creare Quiz</h1>
-    <a href="../../index.html">Go to menu</a>
+    <div class="nav_bar">
+        <h1>Creare Quiz</h1>
+        <a href="../../index.html">Go to menu</a>
+    </div>
     <div class="feature">
         <div class="box-content">
             <form action="" id="store-data">
@@ -19,14 +21,13 @@
                     <input type="question" id="question" placeholder="Question..." /><br />
                 </div>
                 <div class="choice">
-                    A. <label for="answer1"><input id="answer1" type="text" placeholder="option 1..."></label><br>
-                    B. <label for="answer2"><input id="answer2" type="text" placeholder="option 2..."></label><br>
-                    C. <label for="answer3"><input id="answer3" type="text" placeholder="option 3..."></label><br>
-                    D. <label for="answer4"><input id="answer4" type="text" placeholder="option 4..."></label><br>
+                    A. <label for="answer1"><input id="answer1" type="text" placeholder="option a..."></label><br>
+                    B. <label for="answer2"><input id="answer2" type="text" placeholder="option b..."></label><br>
+                    C. <label for="answer3"><input id="answer3" type="text" placeholder="option C..."></label><br>
+                    D. <label for="answer4"><input id="answer4" type="text" placeholder="option D..."></label><br>
                 </div>
                 <hr>
                 <div class="storCorectAnswer">
-                    <!-- Your correct answer: <input type="" id="correct"> -->
                     Correct answer: 
                     <select name="option" id="selection">
                         <option value="A" >A</option>
@@ -39,6 +40,9 @@
             <div class="btn">
                 <button id="add">+ Add auestion</button>
             </div>
+        </div>
+        <div class="edit_content">
+            
         </div>
     </div>
 </body>

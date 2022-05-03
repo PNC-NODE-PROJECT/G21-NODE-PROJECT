@@ -1,0 +1,141 @@
+/*----------------- home page style starts ------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+/* root colors */
+:root{
+    --orange:#ff7800;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(206, 95, 61, 0.787);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
+
+.content{
+    
+    text-align: center;
+    font-size: 2rem;
+    background-image: linear-gradient(rgba(177, 168, 168, 0.6),rgba(0,0,0,0.6)), url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.content h1{
+    margin-top: 0;
+    padding-top: 100px;
+    color:#ffff;
+}
+
+.content h1 span{
+    color: var(--orange);
+}
+
+.content .content_menu{
+    width: 50%;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.content .content_menu a{
+    width: 20%;
+    text-decoration: none;
+    color: var(--black);
+    box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(219, 203, 203, 0.09) 0px 16px 8px, rgba(238, 197, 197, 0.09) 0px 32px 16px;
+}
+/*----------------- home page style ends ------------------*/
+
+/*----------------- edit_page style starts ------------------*/
+.nav_bar{
+    text-align: center;
+}
+
+.nav_bar h1{
+    color: var(--black);
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.nav_bar a{
+    margin: 10px;
+    font-size: 30px;
+    margin-top: 40px;
+    color: var(--light-color);
+}
+
+.box-content{
+    border-top: 7px solid var(--orange);
+    border-radius: 15px;
+    width: 60%;
+    margin: auto;
+    margin-top: 15px;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgba(255, 255, 255, 0.767);    
+}
+.text-answer{
+    font-size: 20px;
+    color: var(--light-color);
+    margin-left: 11%; 
+}
+input[type= 'question']{
+    font-size: 16px;
+    width: 400px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 10%;
+    border:none;
+    outline: none;
+    box-shadow: rgba(15, 112, 185, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.choice{
+    margin-left: 20%;
+}
+.choice input[type='text'] {
+    font-size: 16px;
+    padding: 15px;
+    width: 350px;
+    border:1px solid;
+    border-radius: .5rem;
+    outline: none;
+    margin: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: none;
+
+}
+#add {
+    background: #00b4d8;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 30%;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left: 50%;
+}
+#add:hover{
+    background-color:rgb(30, 196, 202);
+    transition: 400ms;
+}
+/*----------------- edit_page style ends ------------------*/
+
+/*----------------- play_page style starts ------------------*/
+.container{
+    margin-left: 5%;
+    padding-bottom: 30px;
+}
+
+.container .option{
+    background: #00b4d8;
+}
+
+
