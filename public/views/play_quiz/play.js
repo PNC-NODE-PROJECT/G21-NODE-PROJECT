@@ -1,8 +1,7 @@
-const URL = "http://localhost:8000/api/questions"; // URL
+const URL = "/api/questions"; // URL
 axios.get(URL)
 .then(response => {
     let questions = response.data;
-    let answers = questions.answer;
     for(let data of questions)
     {
         let container = document.querySelector(".container");

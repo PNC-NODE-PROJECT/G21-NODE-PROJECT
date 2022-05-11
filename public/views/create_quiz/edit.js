@@ -1,4 +1,4 @@
-const URL = "http://localhost:8000/api/questions";
+const URL = "/api/questions";
 
 function addQuestion(){
     let question = document.getElementById("question");
